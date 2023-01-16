@@ -1,19 +1,14 @@
-
 export const getByName = async (name) => {
-  return await fetch(
-    `http://localhost:8080/citizens/getname?name=${name}`,
-    {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }
-  )
+  return await fetch(`http://localhost:8080/citizens/getname?name=${name}`, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
     .then((res) => {
       return res.json();
     })
-    .then((data) =>data );
-
+    .then((data) => data);
 };
 
 export const getNameContains = async (str) => {
@@ -29,42 +24,33 @@ export const getNameContains = async (str) => {
     .then((res) => {
       return res.json();
     })
-    .then((data) =>data );
-
+    .then((data) => data);
 };
 
 export const getById = async (id) => {
-  return await fetch(
-    `http://localhost:8080/citizens/${id}`,
-    {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }
-  )
+  return await fetch(`http://localhost:8080/citizens/${id}`, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
     .then((res) => {
       return res.json();
     })
-    .then((data) =>data );
-
+    .then((data) => data);
 };
 
 export const getCountChildren = async (id) => {
-  return await fetch(
-    `http://localhost:8080/citizens/countchildren/${id}`,
-    {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    }
-  )
+  return await fetch(`http://localhost:8080/citizens/countchildren/${id}`, {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
     .then((res) => {
       return res.json();
     })
-    .then((data) =>data );
-
+    .then((data) => data);
 };
 
 export const getIsCitizen = async (c) => {
@@ -80,8 +66,7 @@ export const getIsCitizen = async (c) => {
     .then((res) => {
       return res.json();
     })
-    .then((data) =>data );
-
+    .then((data) => data);
 };
 
 export const getHasDrivingLicense = async (l) => {
@@ -97,11 +82,5 @@ export const getHasDrivingLicense = async (l) => {
     .then((res) => {
       return res.json();
     })
-    .then((data) =>data );
-
+    .then((data) => data);
 };
-
-
-
-
-

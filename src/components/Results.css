@@ -14,3 +14,14 @@
   background-color: #f8f8f8;
   border-radius: 4px;
 }
+
+.Results__table {
+  width: 100%;
+  padding: 4px;
+
+  text-align: center;
+  background-color:#f8f8f8;
+  border-radius: 4px;
+  border-collapse: separate;
+  border-spacing: 1em;
+}

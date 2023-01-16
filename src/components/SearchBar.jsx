@@ -1,4 +1,4 @@
-import './SearchBar.css';
+import "./SearchBar.css";
 
 export default function SearchBar({
   searchInput,
@@ -9,7 +9,7 @@ export default function SearchBar({
 }) {
   const handleInput = (e) => {
     // this removes the space in the first char
-    const value = e.target.value.replace(/^\s+/, '');
+    const value = e.target.value.replace(/^\s+/, "");
     setSearchInput(value);
   };
 

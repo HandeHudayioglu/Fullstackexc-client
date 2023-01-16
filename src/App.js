@@ -15,6 +15,20 @@ function App() {
   const [checkboxLabel, setCheckboxLabel] = useState('Contains');
 
   const [results, setResults] = useState([
+    {
+      "id": 2,
+      "name": "Michael Tall",
+      "isCitizen": false,
+      "hasDrivingLicense": false,
+      "children": [
+          {
+              "id": 5,
+              "name": "Sarah Bloggs",
+              "citizenId": 2,
+              "isCitizen": true
+          }
+      ]
+  },
     
   ]);
 
